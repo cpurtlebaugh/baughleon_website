@@ -1,0 +1,28 @@
+<h2>Blog</h2>
+
+
+<ul class="blogposts">
+  <% @blogposts.each do |blogpost| %>
+    <li>
+      <strong>
+        <a href="/blogposts/<%= blogpost.id %>"><%= blogpost.to_s %></a>
+      </strong>
+
+      <a href="/blogposts/<%= blogpost.id %>/edit">
+        Edit
+      </a>
+
+     <form class="blogpost" id="delete-blogpost" method="POST" action="/blogposts/<%= blogpost.id %>">
+      <input type="hidden" name="_method" value="DELETE">
+      <a href="/blogposts/<%= blogpost.id %>/delete">
+        <button id="deletebutton" name="delete-blogpost" class="btn delete">Delete</button>
+      </a>
+      </form>
+
+    </li>
+
+
+  <% end %>
+</ul>
+
+<a class="btn" href="/blogposts/new">Add blogpost</a>

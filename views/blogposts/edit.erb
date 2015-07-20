@@ -1,0 +1,25 @@
+<h2>Edit Blogpost</h2>
+
+<form class="blogpost" id="edit-blogpost" method="POST" action="/blogposts/<%= @blogpost.id %>">
+
+  <input type="hidden" name="_method" value="PUT">
+
+    <div>
+      <label for="blogpost-title">TITLE</label>
+      <input type="text" name="blogpost[title]" id="blogpost-title" value="<%= @blogpost.title %>">
+    </div>
+
+  </div>
+    <label for="blogpost-body">CONTENT</label>
+    <input type="text" name="blogpost[body]" id="blogpost-body" value="<%= @blogpost.body%>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save blogpost" class="btn">
+  </div>
+
+</form>
+
+
+
+

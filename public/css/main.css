@@ -1,0 +1,77 @@
+header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+body {
+  background-color: #272727;
+  color: #f5abb5;
+}
+
+ul {
+  list-style-type: none;
+  color: #f5abb5;
+  padding-top: 15px;
+}
+
+li {
+  display: inline;
+  padding: 25px;
+  color: #f5abb5;
+}
+
+a {
+  color: #f5abb5;
+}
+
+input {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  float: right;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+form.#deletebutton {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+label {
+  padding: 10px;
+}
+
+#title {
+  width: 50%;
+  margin-bottom: 10px;
+}
+#content {
+  width: 50%;
+  height: 300px;
+}
+
+#mc_embed_signup {
+  padding-top: 60px;
+  float: right;
+  background:#272727;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:250px;
+  height: 50px;
+  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+}
+
